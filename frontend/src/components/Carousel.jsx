@@ -29,21 +29,19 @@ useEffect(() => {
 
   return (
 <div className="relative w-full h-[40vh] sm:h-[45vh] md:h-[60vh] lg:h-[70vh] overflow-hidden rounded-lg">
-
-
-      {/* Slides */}
+  {/* Slides */}
+  <div
+    className="flex transition-transform ease-in-out duration-700 h-full"
+    style={{ transform: `translateX(-${current * 100}%)` }}
+  >
+    {images.map((src, index) => (
       <div
-        className="flex transition-transform ease-in-out duration-700"
-        style={{ transform: `translateX(-${current * 100}%)` }}
-      >
-        {images.map((src, index) => (
-          <div
-            key={index}
-            className="w-full h-full flex-shrink-0 bg-center bg-cover"
-            style={{ backgroundImage: `url(${src})` }}
-          />
-        ))}
-      </div>
+        key={index}
+        className="w-full h-full flex-shrink-0 bg-center bg-cover"
+        style={{ backgroundImage: `url(${src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}
+      />
+    ))}
+  </div>
 
       {/* Left Arrow */}
       <button
