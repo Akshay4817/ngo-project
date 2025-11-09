@@ -20,7 +20,8 @@ export default function Carousel() {
   };
 
   return (
-    <div className="relative w-full h-[400px] md:h-[500px] overflow-hidden rounded-lg">
+  <div className="relative w-full h-[220px] sm:h-[300px] md:h-[450px] lg:h-[500px] overflow-hidden rounded-lg">
+
       {/* Slides */}
       <div
         className="flex transition-transform ease-in-out duration-700"

@@ -33,7 +33,9 @@ function App() {
   return (
     <Router>
       <Layout>
-        <Routes>
+        
+        <div className="pt-16">
+          <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/gallery" element={<Gallery />} />
@@ -50,6 +52,7 @@ function App() {
           
           
         </Routes>
+        </div>
       </Layout>
     </Router>
   );
