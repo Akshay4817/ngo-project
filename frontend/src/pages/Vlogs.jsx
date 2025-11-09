@@ -6,8 +6,7 @@ const Vlogs = () => {
   useEffect(() => {
     const fetchVlogs = async () => {
       try {
-        const res = await fetch(`${process.env.REACT_APP_API_URL}
-/api/vlogs`);
+        const res = await fetch(`${process.env.REACT_APP_API_URL}/api/vlogs`);
         const data = await res.json();
         setVlogs(data);
       } catch (error) {

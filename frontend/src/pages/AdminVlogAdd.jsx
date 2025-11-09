@@ -42,8 +42,7 @@ const AdminVlogAdd = () => {
 
     try {
       await axios.post(
-        `${process.env.REACT_APP_API_URL}
-/api/vlogs`,
+        `${process.env.REACT_APP_API_URL}/api/vlogs`,
         { title, videoUrl: embedUrl, description },
         {
           headers: {

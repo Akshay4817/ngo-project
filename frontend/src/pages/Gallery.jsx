@@ -7,8 +7,7 @@ const Gallery = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const res = await fetch(`${process.env.REACT_APP_API_URL}
-/api/gallery`);
+        const res = await fetch(`${process.env.REACT_APP_API_URL}/api/gallery`);
         const data = await res.json();
         setImages(data);
       } catch (error) {

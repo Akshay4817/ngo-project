@@ -18,8 +18,7 @@ const AdminVlogDelete = () => {
     try {
       const token = localStorage.getItem("adminToken");
 
-      await axios.delete(`${process.env.REACT_APP_API_URL}
-/api/vlogs/${id}`, {
+      await axios.delete(`${process.env.REACT_APP_API_URL}/api/vlogs/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

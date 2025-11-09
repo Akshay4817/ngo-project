@@ -22,8 +22,7 @@ const AdminGalleryDelete = () => {
   const handleDelete = async (id) => {
     const token = localStorage.getItem("adminToken");
     try {
-      await axios.delete(`${process.env.REACT_APP_API_URL}
-/api/gallery/${id}`, {
+      await axios.delete(`${process.env.REACT_APP_API_URL}/api/gallery/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
