@@ -23,8 +23,9 @@ connectDB();
 app.use(
   cors({
     origin: [
-      "https://ngo-project-m1sq6kehr-akshay-negis-projects.vercel.app", // your Vercel frontend
-      "http://localhost:3000", // local dev testing
+      "https://ngo-project-gamma.vercel.app", // your current Vercel site
+      "https://ngo-project-m1sq6kehr-akshay-negis-projects.vercel.app", // keep old one just in case
+      "http://localhost:3000" // for local dev
     ],
     credentials: true,
   })
