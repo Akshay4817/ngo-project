@@ -1,5 +1,5 @@
 import express from "express";
-import Vlog from "../models/vlog.js";
+import Vlog from "../models/Vlog.js";
 import { verifyAdminToken } from "../middleware/adminAuthMiddleware.js";
 
 const router = express.Router();
