@@ -1,4 +1,5 @@
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
+
 import { ChevronLeft, ChevronRight } from "lucide-react"; // npm install lucide-react
 
 export default function Carousel() {
@@ -10,6 +11,7 @@ export default function Carousel() {
   ];
 
   const [current, setCurrent] = useState(0);
+  const delay = 3000; 
 
   const prevSlide = () => {
     setCurrent(current === 0 ? images.length - 1 : current - 1);
@@ -18,9 +20,15 @@ export default function Carousel() {
   const nextSlide = () => {
     setCurrent(current === images.length - 1 ? 0 : current + 1);
   };
+useEffect(() => {
+  const timer = setInterval(() => {
+    setCurrent((prev) => (prev + 1) % images.length);
+  }, delay);
+  return () => clearInterval(timer); // cleanup when unmounts
+}, [images.length]);
 
   return (
-  <div className="relative w-full h-[220px] sm:h-[300px] md:h-[450px] lg:h-[500px] overflow-hidden rounded-lg">
+ <div className="relative w-full aspect-[16/9] overflow-hidden rounded-lg">
 
       {/* Slides */}
       <div
@@ -30,7 +38,7 @@ export default function Carousel() {
         {images.map((src, index) => (
           <div
             key={index}
-            className="w-full h-[400px] md:h-[500px] flex-shrink-0 bg-center bg-cover bg-black"
+             className="w-full aspect-[16/9] flex-shrink-0 bg-center bg-cover bg-black"
             style={{ backgroundImage: `url(${src})` }}
           />
         ))}
