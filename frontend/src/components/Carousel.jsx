@@ -28,7 +28,7 @@ useEffect(() => {
 }, [images.length]);
 
   return (
-<div className="relative w-full aspect-[4/3] md:aspect-[16/9] overflow-hidden rounded-lg">
+<div className="relative w-full h-[40vh] sm:h-[45vh] md:h-[60vh] lg:h-[70vh] overflow-hidden rounded-lg">
 
 
       {/* Slides */}
@@ -39,7 +39,7 @@ useEffect(() => {
         {images.map((src, index) => (
           <div
             key={index}
-             className="relative w-full aspect-[4/3] md:aspect-[16/9] flex-shrink-0 bg-center bg-cover bg-black"
+            className="w-full h-full flex-shrink-0 bg-center bg-cover"
             style={{ backgroundImage: `url(${src})` }}
           />
         ))}
