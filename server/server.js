@@ -11,29 +11,44 @@ import adminAuthRoutes from "./routes/adminAuthRoutes.js";
 dotenv.config();
 
 const app = express();
+
+// Handle __dirname in ES Modules
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Middleware
-app.use(cors());
-app.use(express.json());
+// ✅ Connect to MongoDB
+connectDB();
 
-// Static folder
+// ✅ CORS Configuration
+app.use(
+  cors({
+    origin: [
+      "https://ngo-project-m1sq6kehr-akshay-negis-projects.vercel.app", // your Vercel frontend
+      "http://localhost:3000", // local dev testing
+    ],
+    credentials: true,
+  })
+);
+
+// ✅ Middleware
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// ✅ Serve static files (uploads)
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
-// Connect to MongoDB
-connectDB();
-console.log("Admin routes loaded");
-
-// Routes
+// ✅ API Routes
 app.use("/api/admin", adminAuthRoutes);
 app.use("/api/vlogs", vlogRoutes);
 app.use("/api/gallery", galleryRoutes);
 
-// Default route (optional, just for testing)
+// ✅ Default route (for quick test)
 app.get("/", (req, res) => {
-  res.send("API is running...");
+  res.send("API is running and connected successfully...");
 });
 
+// ✅ Port config
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+app.listen(PORT, () =>
+  console.log(`✅ Server running on port ${PORT}`)
+);
