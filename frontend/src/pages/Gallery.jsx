@@ -28,19 +28,17 @@ const Gallery = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {images.length > 0 ? (
           images.map((img, index) => {
-            const cleanPath = img.imageUrl.replace(/\\/g, "/");
+            // ensure clean URL regardless of backend slashes
+            const cleanPath = img.imageUrl?.replace(/\\/g, "/");
+
             return (
               <div
                 key={index}
                 className="overflow-hidden rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer"
-                onClick={() =>
-                  setSelectedImage(`${process.env.REACT_APP_API_URL}
-/${cleanPath}`)
-                }
+                onClick={() => setSelectedImage(cleanPath)}
               >
                 <img
-                  src={`${process.env.REACT_APP_API_URL}
-/${cleanPath}`}
+                  src={cleanPath}
                   alt={img.description || `Gallery ${index + 1}`}
                   className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
                 />
