@@ -17,7 +17,8 @@ const __dirname = path.dirname(__filename);
 // ✅ CORS first, before anything else
 app.use(
   cors({
-    origin: [/\.vercel\.app$/, "http://localhost:3000"],
+    origin: [/\.vercel\.app$/, "http://localhost:3000","https://babaharinathdivyangsewatrust.in",
+      "https://www.babaharinathdivyangsewatrust.in"],
     credentials: true,
   })
 );

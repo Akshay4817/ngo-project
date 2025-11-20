@@ -23,7 +23,7 @@ export default function Contact() {
               <Phone className="text-blue-950" />
               <div>
                 <p className="font-semibold text-blue-950">Phone</p>
-                <p>+91 98765 43210</p>
+                <p>+91 94620 74745</p>
               </div>
             </div>
 
@@ -31,7 +31,7 @@ export default function Contact() {
               <MapPin className="text-blue-950" />
               <div>
                 <p className="font-semibold text-blue-950">Address</p>
-                <p>123 Hope Street, Green City, India</p>
+                <p>Rajiv Gandhi Enclave, Sector 3A , Bhiwadi(Raj)</p>
               </div>
             </div>
           </div>
@@ -61,13 +61,13 @@ export default function Contact() {
                 <span className="font-medium">facebook.com/yourpage</span>
               </a>
               <a
-                href="https://www.youtube.com/@yourchannel"
+                href="https://youtube.com/@kddayma-d5o?si=OzQbAO004jTuR5nP"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-green-800 transition"
               >
                 <Youtube className="text-red-600" />
-                <span className="font-medium">@yourchannel</span>
+                <span className="font-medium">Baba Harinath Divyang Sewa Trust</span>
               </a>
             </div>
           </div>
