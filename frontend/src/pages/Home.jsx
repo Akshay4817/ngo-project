@@ -52,8 +52,7 @@ export default function Home() {
          <WhatWeDo />
 
       {/* Our Agenda Section */}
-      <div className="bg-white rounded-3xl shadow-xl p-10 max-w-6xl mx-auto">
-  <section className="bg-blue-50 py-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-blue-50 py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10">
             <p className="uppercase tracking-[0.2em] text-blue-500 text-xs mb-2">
@@ -144,8 +143,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-</div>
-
 
       {/* About Section */}
       <AboutSection />

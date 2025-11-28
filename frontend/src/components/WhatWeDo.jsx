@@ -4,7 +4,7 @@ import { FaWheelchair, FaFemale, FaBookOpen } from "react-icons/fa";
 
 const WhatWeDo = () => {
   return (
-    <section className="bg-blue-50 py-16 px-6 md:px-20">
+    <section className="bg-sky-50 py-16 px-6 md:px-20">
       <div className="max-w-7xl mx-auto text-center">
         <p className="uppercase tracking-[0.25em] text-blue-500 text-xs mb-2">
           What We Do
