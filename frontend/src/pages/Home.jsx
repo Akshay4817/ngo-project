@@ -1,5 +1,6 @@
 import Carousel from "../components/Carousel";
 import AboutSection from "../components/AboutSection";
+import WhatWeDo from "../components/WhatWeDo";
 
 export default function Home() {
   return (
@@ -45,6 +46,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <WhatWeDo />
 
       {/* Our Agenda Section */}
       <section className="bg-blue-50 py-16 px-4 sm:px-6 lg:px-8">
