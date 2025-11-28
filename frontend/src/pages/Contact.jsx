@@ -15,7 +15,7 @@ export default function Contact() {
               <Mail className="text-blue-950" />
               <div>
                 <p className="font-semibold text-blue-950">Email</p>
-                <p>contact@ourngo.org</p>
+                <p>Babaharinathdivyang@gmail.com</p>
               </div>
             </div>
 
@@ -23,7 +23,7 @@ export default function Contact() {
               <Phone className="text-blue-950" />
               <div>
                 <p className="font-semibold text-blue-950">Phone</p>
-                <p>+91 94620 74745</p>
+                <p>+91 76652 28153</p>
               </div>
             </div>
 
@@ -31,7 +31,7 @@ export default function Contact() {
               <MapPin className="text-blue-950" />
               <div>
                 <p className="font-semibold text-blue-950">Address</p>
-                <p>Rajiv Gandhi Enclave, Sector 3A , Bhiwadi(Raj)</p>
+                <p>Near Alampur Mandir,Behind Libaray, Sector(3)A, Bhiwadi(Raj)</p>
               </div>
             </div>
           </div>
@@ -49,16 +49,16 @@ export default function Contact() {
                 className="flex items-center gap-3 hover:text-green-800 transition"
               >
                 <Instagram className="text-pink-600" />
-                <span className="font-medium">@yourusername</span>
+                <span className="font-medium">@Baba Harinath Divyang Sewa Trust</span>
               </a>
               <a
-                href="https://www.facebook.com/yourpage"
+                href="https://www.facebook.com/share/p/1KBpMzxpfN/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:text-green-800 transition"
               >
                 <Facebook className="text-blue-600" />
-                <span className="font-medium">facebook.com/yourpage</span>
+                <span className="font-medium">facebook.com/Baba Harinath Divyang Sewa Trust</span>
               </a>
               <a
                 href="https://youtube.com/@kddayma-d5o?si=OzQbAO004jTuR5nP"
