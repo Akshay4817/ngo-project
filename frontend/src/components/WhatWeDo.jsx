@@ -15,6 +15,7 @@ const WhatWeDo = () => {
         </h2>
 
         <div className="grid gap-10 md:grid-cols-3">
+
           {/* Card 1 */}
           <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition">
             <div className="text-5xl text-blue-700 mb-5 flex justify-center">
@@ -24,8 +25,8 @@ const WhatWeDo = () => {
               Support for Divyang
             </h3>
             <p className="text-gray-700 text-sm leading-relaxed">
-              Mobility support, medical help, and vocational skill development 
-              for persons with disabilities to ensure dignity and independence.
+              Medical help, mobility support and skill-based development for
+              persons with disabilities.
             </p>
           </div>
 
@@ -38,8 +39,8 @@ const WhatWeDo = () => {
               Women Empowerment
             </h3>
             <p className="text-gray-700 text-sm leading-relaxed">
-              Tailoring & sewing training for women from underprivileged 
-              communities, helping them achieve financial stability.
+              Tailoring and sewing training for women to achieve financial
+              independence.
             </p>
           </div>
 
@@ -49,13 +50,14 @@ const WhatWeDo = () => {
               <FaBookOpen />
             </div>
             <h3 className="text-2xl font-semibold text-blue-900 mb-3">
-              Free Tuition for Children
+              Tuition for Children
             </h3>
             <p className="text-gray-700 text-sm leading-relaxed">
-              Education support and free classes for children who cannot afford
-              coaching, ensuring no child is left behind.
+              Free tuition classes, learning materials, and educational
+              guidance for underprivileged students.
             </p>
           </div>
+
         </div>
       </div>
     </section>
