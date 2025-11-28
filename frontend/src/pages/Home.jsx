@@ -58,7 +58,7 @@ export default function Home() {
       </section>
 
       {/* NEW Section */}
-      <WhatWeDo />
+  
 
       {/* Agenda Section */}
       <section className="bg-blue-50 py-16 px-4 sm:px-6 lg:px-8">
