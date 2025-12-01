@@ -30,7 +30,29 @@ function Layout({ children }) {
 }
 
 function App() {
+  const maintenance = true; 
+
+  if (maintenance) {
+    return (
+      <div
+        style={{
+          minHeight: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          fontFamily: "sans-serif",
+          textAlign: "center",
+          padding: "1rem",
+        }}
+      >
+        <h1>Server Temporarily Down</h1>
+       
+      </div>
+    );
+  }
   return (
+    
     <Router>
       <Layout>
         
