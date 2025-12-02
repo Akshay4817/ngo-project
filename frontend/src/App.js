@@ -30,7 +30,7 @@ function Layout({ children }) {
 }
 
 function App() {
-  const maintenance = true; 
+  const maintenance = false; 
 
   if (maintenance) {
     return (
