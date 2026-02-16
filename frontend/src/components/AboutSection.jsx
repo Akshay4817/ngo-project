@@ -43,8 +43,8 @@ const AboutSection = () => {
           </p>
 
           <p className="text-gray-700 leading-relaxed text-lg mb-4">
-            We also conduct <span className="font-medium">free tuition classes</span>{" "}
-            for children who cannot afford formal coaching, ensuring that no child’s
+            We also provide <span className="font-medium">Nishulk Shiksha</span>{" "}
+            to children who cannot afford formal coaching, ensuring that no child’s
             education is left behind.
           </p>
 
