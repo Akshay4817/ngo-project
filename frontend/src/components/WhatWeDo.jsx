@@ -25,7 +25,7 @@ const WhatWeDo = () => {
               Support for Divyang
             </h3>
             <p className="text-gray-700 text-sm leading-relaxed">
-              Medical help, mobility support and skill-based development for
+               Mobility support and skill-based development for
               persons with disabilities.
             </p>
           </div>
@@ -50,10 +50,10 @@ const WhatWeDo = () => {
               <FaBookOpen />
             </div>
             <h3 className="text-2xl font-semibold text-blue-900 mb-3">
-              Tuition for Children
+             Nishulk Shiksha
             </h3>
             <p className="text-gray-700 text-sm leading-relaxed">
-              Free tuition classes, learning materials, and educational
+              Nishulk Shiksha, learning materials, and educational
               guidance for underprivileged students.
             </p>
           </div>

@@ -114,7 +114,7 @@ export default function Home() {
                 Education Support
               </h3>
               <p className="text-gray-700 text-sm mb-3">
-                Free tuition classes, study material and guidance for children
+                Nishulk Shiksha, study material and guidance for children
                 from underprivileged backgrounds.
               </p>
               <ul className="list-disc list-inside text-gray-600 text-xs space-y-1 mt-auto">
