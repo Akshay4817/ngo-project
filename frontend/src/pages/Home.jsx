@@ -78,11 +78,11 @@ export default function Home() {
                 Empowering Divyang
               </h3>
               <p className="text-gray-700 text-sm mb-3">
-                Medical assistance, mobility support and skill-based opportunities
+                Mobility support and skill-based opportunities
                 for persons with disabilities.
               </p>
               <ul className="list-disc list-inside text-gray-600 text-xs space-y-1 mt-auto">
-                <li>Mobility & medical support</li>
+                <li>Mobility support</li>
                 <li>Vocational training & livelihoods</li>
               </ul>
             </div>

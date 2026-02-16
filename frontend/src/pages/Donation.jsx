@@ -21,7 +21,7 @@ const Donation = () => {
             <h3 className="text-2xl font-semibold text-blue-950 mb-4">Bank Account Details</h3>
             <ul className="text-gray-700 space-y-2">
               <li><span className="font-semibold">Account Name:</span> Baba Harinath Divyang Seva Trust</li>
-              <li><span className="font-semibold">Account Number:</span> 21602000000642</li>
+              <li><span className="font-semibold">Account Number:</span> 216602000000642</li>
               <li><span className="font-semibold">Bank Name:</span> Indian Overseas Bank</li>
               <li><span className="font-semibold">IFSC Code:</span> IOBA0002166</li>
               <li><span className="font-semibold">Branch:</span> Bhiwadi</li>
